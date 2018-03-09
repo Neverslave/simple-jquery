@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>simple-jquery</title>
+    <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js">
+    </script>
+    <style>
+        .navigator-content{
+            width: 240px;
+            height: auto;
+            position: relative;
+            left: 0;
+            top: 29px;
+            font-size: 14px;
+            clear: both;
+
+        }
+        .navigator-first{
+            width: 203px;
+            height: auto;
+            margin-top: 28px;
+            margin-left: 19px;
+            cursor: pointer;
+            position: relative;
+
+
+        }
+        .navigator-second{
+            width: 203px;
+            height:auto;
+            font-size: 14px;
+            color: #757E8E;
+            list-style: none;
+            padding: 0;
+            display: none;
+        }
+        .navigator-second-content{
+            width: 203px;
+            height: 20px;
+            margin-top: 32px;
+            color: #757E8E !important;
+        }
+
+        .navigator-first ol{
+            margin: 0;
+            padding: 0;
+        }
+        .list-icon{
+            width: 12px;
+            height: 7px;
+            display: block;
+            position: absolute;
+            right: 10px;
+            top: 7px;
+            background: no-repeat url("../IMAGE/arrow-down.png");
+        }
+        #open .list-icon{
+            background: no-repeat url("../IMAGE/arrow-up.png");
+
+        }
+        .intro-container{
+            width: 898px;
+            height: auto;
+        }
+        .change-buttons-container{
+            width: 898px;
+            height: 71px;
+            margin-left: 43px;
+        }
+        .change-button{
+            width:181px ;
+            height: 71px;
+            margin-right: 43px;
+            float: left;
+            position: relative;
+            cursor: pointer;
+            color: #002059;
+        }
+        .change-button p{
+            width: 65px;
+            height: 22px;
+            font-size: 16px;
+
+            position: absolute;
+            top: 30px;
+            left:76px ;
+        }
+        .intro-main-container{
+            width: 898px;
+            height: auto;
+            margin-top: 32px;
+            display: none;
+        }
+        .intro-main-title{
+            width: 898px;
+            height: 25px;
+            border-left:4px solid #157CF8;
+        }
+        .intro-main-title p{
+            width: 74px;
+            height: 25px;
+            margin-left: 12px;
+            font-size: 18px;
+            color: #002059;
+        }
+        .intro-main-content{
+            width: 898px;
+            height: auto;
+            margin-top:28px;
+        }
+        .intro-main-content p{
+            width: 898px;
+            height: auto;
+            font-size:16px;
+            color: #757E8E;
+            line-height: 22px;
+        }
+        .intro-main-active{
+            display: block;
+        }
+        .change-button-active{
+            border-bottom: 1px solid #2A73F7;
+            color: #2A73F7 !important;
+        }
+    </style>
+</head>
+<body>
+<div class="left-navigator-container ">
+    <div class="navigator-content ">
+        <ol>
+            <li class="navigator-first" style="margin-top: 13px;"><p>硬件服务</p><i class="list-icon"></i>
+                <div class="navigator-second">
+                    <ol>
+                        <li class="navigator-second-content"><a href="#"><p><img src="../IMAGE/网络.png">网络设备</p></a></li>
+                        <li class="navigator-second-content"><a href="#"><p><img src="../IMAGE/系统应用服务器.png">服务器设备</p></a></li>
+                        <li class="navigator-second-content"><a href="#"><p><img src="../IMAGE/通讯设备.png">通讯设备</p></a></li>
+                        <li class="navigator-second-content"><a href="#"><p><img src="../IMAGE/电脑.png">终端设备</p></a></li>
+                    </ol>
+                </div>
+            </li>
+            <li class="navigator-first"><p>软件服务</p><i class="list-icon"></i>
+                <div class="navigator-second">
+                    <ol>
+                        <li class="navigator-second-content"><a href="#"><p><img src="../IMAGE/网络.png">网络设备</p></a></li>
+                        <li class="navigator-second-content"><a href="#"><p><img src="../IMAGE/系统应用服务器.png">服务器设备</p></a></li>
+                        <li class="navigator-second-content"><a href="#"><p><img src="../IMAGE/通讯设备.png">通讯设备</p></a></li>
+                        <li class="navigator-second-content"><a href="#"><p><img src="../IMAGE/电脑.png">终端设备</p></a></li>
+                    </ol>
+                </div>
+            </li>
+            <li class="navigator-first"><p>基础设施</p><i class="list-icon"></i>
+                <div class="navigator-second">
+                    <ol>
+                        <li class="navigator-second-content"><a href="#"><img src="../IMAGE/yueqicloud-logo.png">悦企云</a></li>
+                    </ol>
+                </div>
+            </li>
+            <li class="navigator-first"><p>系统集成<i class="list-icon"></i>
+                <div class="navigator-second">
+                    <ol>
+                        <li class="navigator-second-content"><a href="#"><p><img src="../IMAGE/网络.png">网络设备</p></a></li>
+            <li class="navigator-second-content"><a href="#"><p><img src="../IMAGE/系统应用服务器.png">服务器设备</p></a></li>
+            <li class="navigator-second-content"><a href="#"><p><img src="../IMAGE/通讯设备.png">通讯设备</p></a></li>
+            <li class="navigator-second-content"><a href="#"><p><img src="../IMAGE/电脑.png">终端设备</p></a></li>
+        </ol>
+    </div>
+    </li>
+    <li class="navigator-first"><p>云服务</p><i class="list-icon"></i>
+        <div class="navigator-second">
+            <ol>
+                <li class="navigator-second-content"><a href="../HTML/page-solution-yueqicloud.html"><img src="../IMAGE/yueqicloud-logo.png">悦企云</a></li>
+            </ol>
+        </div>
+
+    </li>
+    <li class="navigator-first"><p>IT外包</p><i class="list-icon"></i>
+        <div class="navigator-second">
+            <ol>
+                <li class="navigator-second-content"><a href="#"><p><img src="../IMAGE/网络.png">网络设备</p></a></li>
+                <li class="navigator-second-content"><a href="#"><p><img src="../IMAGE/系统应用服务器.png">服务器设备</p></a></li>
+                <li class="navigator-second-content"><a href="#"><p><img src="../IMAGE/通讯设备.png">通讯设备</p></a></li>
+                <li class="navigator-second-content"><a href="#"><p><img src="../IMAGE/电脑.png">终端设备</p></a></li>
+            </ol>
+        </div>
+    </li>
+    </ol>
+</div>
+<div class="intro-container">
+    <div class="change-buttons-container clearfloat">
+        <div class="change-button change-button-active"><p>产品架构</p></div>
+        <div class="change-button"><p>产品特色</p></div>
+        <div class="change-button"><p>功能介绍</p></div>
+        <div class="change-button"><p>客户案例</p></div>
+    </div>
+    <div class="intro-main-container intro-main-active">
+        <div class="intro-main-title"><p>产品架构</p></div>
+        <div class="intro-main-content">
+            <p>
+                文字示意：生产管理系统处于中间层，向下联通企业设备及工艺控制系统（DCS），向控制系统下达生产指令，搜集控制系统的输出信息，不断进行信息处理，动态评估整个生产工艺出力状态、生产设备及环境的健康状态、生产操作过程经济状态，对企业生产目标完成情况进行及时度量、汇总分发；对企业生产过程进行跟踪评估、考核。生产管理系统向上服务于企业资源计划系统（ERP），接收ERP系统计划和预算，反馈实际生产结果，目标计划完成情况等。生产管理系统为企业安全、运行、检修和生产技术管理等管理口、各层级组织服务；生产管理系统业务模块包括：生产设备管理、生产运行管理、安全管理、生产技术管理、班组管理等。
+            </p>
+        </div>
+    </div>
+    <div class="intro-main-container">
+        <div class="intro-main-title"><p>产品特色</p></div>
+        <div class="intro-main-content">
+            <p>
+                文字示意：生产管理系统处于中间层，向下联通企业设备及工艺控制系统（DCS），向控制系统下达生产指令，搜集控制系统的输出信息，不断进行信息处理，动态评估整个生产工艺出力状态、生产设备及环境的健康状态、生产操作过程经济状态，对企业生产目标完成情况进行及时度量、汇总分发；对企业生产过程进行跟踪评估、考核。生产管理系统向上服务于企业资源计划系统（ERP），接收ERP系统计划和预算，反馈实际生产结果，目标计划完成情况等。生产管理系统为企业安全、运行、检修和生产技术管理等管理口、各层级组织服务；生产管理系统业务模块包括：生产设备管理、生产运行管理、安全管理、生产技术管理、班组管理等。
+            </p>
+        </div>
+    </div>
+    <div class="intro-main-container">
+        <div class="intro-main-title"><p>功能介绍</p></div>
+        <div class="intro-main-content">
+            <p>
+                文字示意：生产管理系统处于中间层，向下联通企业设备及工艺控制系统（DCS），向控制系统下达生产指令，搜集控制系统的输出信息，不断进行信息处理，动态评估整个生产工艺出力状态、生产设备及环境的健康状态、生产操作过程经济状态，对企业生产目标完成情况进行及时度量、汇总分发；对企业生产过程进行跟踪评估、考核。生产管理系统向上服务于企业资源计划系统（ERP），接收ERP系统计划和预算，反馈实际生产结果，目标计划完成情况等。生产管理系统为企业安全、运行、检修和生产技术管理等管理口、各层级组织服务；生产管理系统业务模块包括：生产设备管理、生产运行管理、安全管理、生产技术管理、班组管理等。
+            </p>
+        </div>
+    </div>
+    <div class="intro-main-container">
+        <div class="intro-main-title"><p>客户案例</p></div>
+        <div class="intro-main-content">
+            <p>
+                文字示意：生产管理系统处于中间层，向下联通企业设备及工艺控制系统（DCS），向控制系统下达生产指令，搜集控制系统的输出信息，不断进行信息处理，动态评估整个生产工艺出力状态、生产设备及环境的健康状态、生产操作过程经济状态，对企业生产目标完成情况进行及时度量、汇总分发；对企业生产过程进行跟踪评估、考核。生产管理系统向上服务于企业资源计划系统（ERP），接收ERP系统计划和预算，反馈实际生产结果，目标计划完成情况等。生产管理系统为企业安全、运行、检修和生产技术管理等管理口、各层级组织服务；生产管理系统业务模块包括：生产设备管理、生产运行管理、安全管理、生产技术管理、班组管理等。
+            </p>
+        </div>
+    </div>
+</div>
+</body>
+<script>
+
+    //切换选项卡jquery 实现
+    //通过改变样式实现切换
+    $(function(){
+        $(".change-button").on("click",function () {
+            $(this).addClass("change-button-active").siblings().removeClass("change-button-active");
+            $(".intro-main-container").eq($(".change-button").index(this)).show().siblings(".intro-main-container").hide();
+        });
+    });
+
+    //左侧手风琴下拉框
+    //通过判定是否存在id #open 有就slideup，否则就slidedown 并把相邻的所有同胞的子元素slideup。
+    $(function () {
+        $(".navigator-first").on("click",function () {
+            $('.navigator-second').stop();
+            $(this).siblings(".navigator-first").removeAttr("id");
+            if($(this).attr("id")=="open"){
+                $(this).removeAttr("id").children(".navigator-second").slideUp();
+            }else{
+                $(this).attr("id","open").children(".navigator-second").slideDown();
+                $(this).siblings(".navigator-first").children(".navigator-second").slideUp();
+            }
+        });
+
+
+    });
+</script>
+</html>
